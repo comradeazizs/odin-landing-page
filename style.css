@@ -12,10 +12,23 @@ body{
 }
 
 .spaceholder{
-	flex: 0 0 150px;
+	flex: 1 0 150px;
 }
 
+h1{
+	padding: 0;
+	margin: 0;
+}
+a,
+.text p{
+	text-decoration: none;
+	font-size: 18px;
+	color: #E5E7EB;
+}
 /* Header style */
+.header .spaceholder{
+	flex: 0 0 150px;
+}
 .header{
 	display: flex;
 	flex: 0 0 50px;
@@ -40,25 +53,24 @@ li{
 	list-style: none;
 }
 /* Upper content style */
-.cont-mid-up{
-	display: flex;
-}
-
 .cont-up{
 	display: flex;
 	flex: 0 0 400px;
 	align-items: center;
-}
-
-.footer,
-.cont-up{
 	background-color: #1F2937;
 }
+
 img{
 	height: 250px;
 	width: auto;
 	margin-left: 80px;
 }
+
+.text h1{
+	color: #F9FAF8;
+	font-size: 48px;
+}
+
 button{
 	background-color: #3882F8;
 	color: white;
@@ -80,9 +92,10 @@ button{
 }
 .cont-mid-up{
 	display: flex;
-	flex: 1 0 120px;
+	flex: 1 0 350px;
 	gap: 45px;
 	justify-content: center;
+	align-items: flex-start;
 }
 
 .img-cont .image{
@@ -100,27 +113,66 @@ button{
 	width: 160px;
 	text-align: center;
 }
-
-.text h1{
-	color: #F9FAF8;
-	font-size: 48px;
+/*Lower content style*/
+.cont-mid-low{
+	display: flex;
+	flex: 1 1 500px;
+	background-color: #E5E7EB;
+	justify-content: space-between;
+	align-items: center;
 }
 
-h1{
-	padding: 0;
+.quote{
+	width: 800px;
+	font-size: 36px;
+	font-weight: 300;
+	font-style: italic;
+	margin-bottom: 0;
+}
+.author{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 0;
+}
+
+.cont-low{
+	display: flex;
+	flex: 0 0 200px;
+	align-items: center;
+}
+
+.cont-inside{
+	background-color: #3882F8;
+	flex: 5 0 auto;
+	display: flex;
+	justify-content: center;
+	height: 100px ;
+	align-items: center;
+	border-radius: 10px;
+}
+.cont-inside button{
+	margin-left: 100px;
+	border-color: white;
+}
+.text-action p{
 	margin: 0;
-}
- 
-
-
-a,
-.text p{
-	text-decoration: none;
-	font-size: 18px;
-	color: #E5E7EB;
+	color: white;
 }
 
-
-.spaceholder{
-	flex: 0 0 150px;
+.text-action p strong{
+	font-size: 25px;
 }
+/* Footer style */
+.footer{
+	background-color: #1F2937;
+	display: flex;
+	justify-content: center;
+}
+.footer p{
+	color: white;
+	margin: 30px;
+}
+
+
+
+
